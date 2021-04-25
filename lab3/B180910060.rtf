@@ -1,0 +1,161 @@
+{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset204 Times New Roman;}{\f1\fnil\fcharset0 Times New Roman;}{\f2\fnil\fcharset0 Courier New;}{\f3\fnil\fcharset204 Courier New;}}
+{\colortbl ;\red0\green0\blue0;}
+{\*\generator Riched20 10.0.18362}\viewkind4\uc1 
+\pard\sl240\slmult1\cf1\f0\fs24\lang1104\par
+\par
+\b\fs40\'cd\'fd\'f0 \'f2\'ee\'ec\'fa\'b8\'ed\'fb \'f2\'e0\'e9\'eb\'e1\'e0\'f0\par
+\b0\fs24\par
+\b\f1\lang1033 mysqli_connect\par
+\b0\f0\lang1104\'dd\'ed\'fd\'f5\u1199?\u1199? \'f4\u1199?\'ed\'ea\'f6 \'ed\'fc \f1\lang1033 Hostname username password database_name port \par
+\f0\lang1104\'e3\'fd\'f1\'fd\'ed \'f3\'f2\'e3\'f3\'f3\'e4\'fb\'e3 \'e0\'e2\'ed\'e0\f1\lang1033 .\par
+Hostname -\f0\lang1104  \'f5\'ee\'eb\'e1\'ee\'eb\'f2 \u1199?\u1199?\'f1\'e3\'fd\'e6 \'e1\'f3\'e9 \u1257?\'e3\u1257?\'e3\'e4\'eb\'e8\'e9\'ed \'f1\'e0\'ed\'e3\'e8\'e9\'ed \'f5\'e0\'ff\'e3\par
+\f1\lang1033 username - \f0\lang1104\u1257?\'e3\u1257?\'e3\'e4\'eb\'e8\'e9\'ed \'f1\'e0\'ed\'e4 \'f5\'e0\'ed\'e4\'e0\'f5\'e4\'e0\'e0\'ed \'ff\'ec\'e0\'f0 \'f5\'fd\'f0\'fd\'e3\'eb\'fd\'e3\'f7\'fd\'fd\'f0 \'f5\'e0\'ed\'e4\'e0\'f5 \f1\lang1033 (root,admin \f0\lang1104\'f5\'fd\'f0\'fd\'e3\'eb\'f7\'fd\'fd\'f1 \'f5\'e0\'ec\'e0\'e0\'f0\'e0\'ed \u1257?\'e3\u1257?\'e3\'e4\'eb\'e8\'e9\'ed \'f1\'e0\'ed\'e4 \u1257?\u1257?\'f0\'f7\'eb\u1257?\'eb\'f2 \'ee\'f0\'f3\'f3\'eb\'e0\'f5 \'fd\'f0\'f5\f1\lang1033 )\f0\lang1104\par
+\f1\lang1033 password - \f0\lang1104\'f2\'f3\'f5\'e0\'e9\'ed \'f5\'fd\'f0\'fd\'e3\'e4\'fd\'e3\'f7\'e8\'e9\'ed \'ed\'f3\'f3\'f6 \u1199?\'e3 \par
+\f1\lang1033 database_name \f0\lang1104 - \u1257?\'e3\u1257?\'e4\'eb\'e8\'e9\'ed \'f1\'e0\'ed\'e3\'e8\'e9\'ed \'ed\'fd\'f0\par
+\f1\lang1033 port \f0\lang1104 - \'d2\'f3\'f5\'e0\'e9\'ed \u1257?\'e3\u1257?\'e3\'e4\'eb\'e8\'e9\'ed \'f1\'e0\'ed \'ff\'ec\'e0\'f0 \f1\lang1033 port \f0\lang1104\'e0\'f8\'e8\'e3\'eb\'e0\'e6 \'e1\'e0\'e9\'e3\'e0\'e0 \f1\lang1033 (localhost: "\b 5000"\b0 )\par
+\f0\lang1104\par
+\b\f1\lang1033 $_SERVER\par
+\b0\f0\lang1104\'d1\u1199?\'ef\'e5\'f0 \'e3\'eb\'ee\'e1\'e0\'eb \'f5\'f3\'e2\'fc\'f1\'e0\'e3\'f7 \'f2\'f3\'f5\'e0\'e9\'ed \'f1\'e5\'f0\'e2\'e5\'f0\'e8\'e9\'ed \'ec\'fd\'e4\'fd\'fd\'eb\'eb\'e8\'e9\'e3 \u1199?\u1199?\'e3\'fd\'fd\'f0 \'e4\'e0\'ec\'e6\'f3\'f3\'eb\'e0\'ed \'e0\'e2\'f7 \'e1\'ee\'eb\'ed\'ee\f1\lang1033 .\par
+\f0\lang1104\'e6\'e8\'f8\'fd\'fd $_SERVER['SERVER_PORT'] \'d2\'f3\'f5\'e0\'e9\'ed \'f1\'e5\'f0\'e2\'e5\'f0 \'e0\'eb\'fc \'ef\'ee\'f0\'f2 \'e4\'fd\'fd\'f0 \'e0\'e6\'e8\'eb\'eb\'e0\'e6 \'e1\'e0\'e9\'e3\'e0\'e0\'e3 \'e1\'f3\'f6\'e0\'e0\'ed\'e0\f1\lang1033 .\par
+\par
+\b\f0\lang1104 $_SERVER["REQUEST_METHOD"]\par
+\b0\'d2\'f3\'f5\'e0\'e9\'ed \'f5\'f3\'f3\'e4\'e0\'f1 \'fd\'f1\'e2\'fd\'eb \u1257?\'e3\u1257?\'e3\'e4\u1257?\'eb\'e4 \f1\lang1033 get post \f0\lang1104\'e0\'eb\'e8\'e9\'e3 \'e0\'f8\'e8\'e3\'eb\'e0\'f1\'e0\'ed\'e3 \'e1\'f3\'f6\'e0\'e0\'ed\'e0\par
+\f1\lang1033\par
+\b mysqli_query\par
+\b0\f0\lang1104\'dd\'ed\'fd\'f5\u1199?\u1199? \'f4\u1199?\'ed\'ea\'f6 \'ed\'fc \u1199?\'e9\'eb\'e4\'fd\'eb \'f5\'e8\'e9\'e6 \'e1\'f3\'e9 \u1257?\'e3\u1257?\'e3\'e4\'eb\'e8\'e9\'ed \'f1\'e0\'ed \'ec\u1257?\'ed \f1\lang1033 sql command \f0\lang1104\'e8\'e9\'e3 \f1\lang1033 string \f0\lang1104\'f5\'fd\'eb\'e1\'fd\'f0\'fd\'fd\'f0 \'e0\'e2\'ed\'e0\f1\lang1033 .\par
+\par
+\b mysqli_error\f0\lang1104  \par
+\b0\u1256?\'e3\u1257?\'e3\'e4\'eb\'e8\'e9\'ed \'f1\'e0\'ed\'e3\'e0\'e0\'f1 \'e1\'f3\'f6\'e0\'e0\'e6 \'e1\'f3\'e9 \'e0\'eb\'e4\'e0\'e0\'ed\'e8\'e9 \'ec\'fd\'e4\'fd\'fd\'eb\'eb\'e8\'e9\'e3 \'e1\'f3\'f6\'e0\'e0\'ed\'e0\f1\lang1033 .\par
+\par
+\b mysqli_fetch_assoc\par
+\b0\f0\lang1104\u1256?\'e3\u1257?\'e3\'e4\'eb\'e8\'e9\'ed \'f1\'e0\'ed\'e3\'e0\'e0\'f1 \'e1\'f3\'f6\'e0\'e0\'e6 \'e1\'f3\'e9 \u1199?\'f0 \'e4\u1199?\'ed\'e3 \'ec\'e0\'f1\'f1\'e8\'e2 \'f5\'fd\'eb\'e1\'fd\'f0\'fd\'fd\'f0 \'f5\'e0\'e4\'e3\'e0\'eb\'e0\'f5 \'f5\'f3\'e2\'fc\'f1\'e0\'e3\'f7\par
+\par
+\b mysqli_real_escape_string\par
+\b0\'e0\'e2\'f7 \'e1\'f3\'e9 \f1\lang1033 string \f0\lang1104\'fd\'fd\'f1 \'f5\'ee\'f0\'f2\'ee\'e9 \'f2\'fd\'ec\'e4\'fd\'e3\'f2\u1199?\u1199?\'e4\'e8\'e9\'e3 \'f1\'e0\'eb\'e3\'e0\'ed\'e0\f1\lang1033 . \f0\lang1104\'c6\'e8\'f8\'fd\'fd \f1\lang1033 ('A'hpnoze' \f0\lang1104\u1199?\'f0 \'e4\u1199?\'ed \f1\lang1033 'A\f0\lang1104\\\f1\lang1033 'hpnoze')\par
+\par
+\f2\par
+<!DOCTYPE html>\par
+<html lang="en">\par
+<head>\par
+    <meta charset="UTF-8">\par
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">\par
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">\par
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">\par
+    <title>Lab3</title>\par
+</head>\par
+<body>\par
+<div class = "container">\par
+<form action = "index.php" method="POST">\par
+  <div class="form-group" >\par
+    <input type = "hidden" name = "crud" value ="<?php echo (isset($_GET['crud'])) ? $_GET['crud']:'' ?>" >\par
+    <input type = "hidden" name = "id" value ="<?php echo (isset($_GET['id'])) ? $_GET['id']:'' ?>" >\par
+    <input type = "hidden" name = "name" value ="<?php echo (isset($_GET['name'])) ? $_GET['name']:'' ?>" >\par
+    <input type = "hidden" name = "email" value ="<?php echo (isset($_GET['email'])) ? $_GET['email']:'' ?>" >\par
+    <label for="inputName">Name</label>\par
+    <input type="text" class="form-control" name="inputName" value = "<?php echo (isset($_GET['name']))?$_GET['name']:'';?>" placeholder="Name">\par
+  </div>\par
+  <div class="form-group">\par
+    <label for="inputEmail">Email</label>\par
+    <input type="email" class="form-control" name="inputEmail" value = "<?php echo (isset($_GET['email']))? $_GET['email']:'';?>" placeholder="Email">\par
+  </div>\par
+  <div class="form-group">\par
+    <label for="inputPassword">Password</label>\par
+    <input type="password" class="form-control" name="inputPassword" placeholder="Password">\par
+  </div>\par
+  <button type="submit" class="btn btn-primary">Submit</button>\par
+</form>\par
+</div>\par
+<?php\par
+    $servername = "localhost";\par
+    $username = "root";\par
+    $password = "";\par
+    $dbname = "it301";\par
+    $con = mysqli_connect($servername, $username, $password, $dbname);\par
+if(!$con)\par
+\{\par
+    die("\f3\lang1104\'c0\'eb\'e4\'e0\'e0:".mysqli_connect_error());\par
+\}\par
+    if($_SERVER["REQUEST_METHOD"] == "POST")\par
+    \{\par
+        if($_POST["crud"]=="")\par
+        \{\par
+            \par
+          if (isset($_REQUEST["inputName"]) && isset($_REQUEST["inputEmail"]) && isset($_REQUEST["inputPassword"]))\par
+            \{\par
+              $uname=$_REQUEST["inputName"];\par
+              $uemail=$_REQUEST["inputEmail"];\par
+              $upass = $_REQUEST["inputPassword"];\par
+              $name = mysqli_real_escape_string($con,$uname);\par
+              $email =mysqli_real_escape_string($con,$uemail);\par
+              $pass = mysqli_real_escape_string($con,$upass);\par
+              echo $name;\par
+              echo $pass;\par
+              echo $email; \par
+              $sql = "INSERT INTO `employee` ( `name`, `email`, `pass`) VALUES('$name','$email',md5('$pass'));";\par
+              if (mysqli_query($con, $sql)) \par
+              \{\par
+                echo "New record created successfully";\par
+              \} else \par
+              \{\par
+                echo "Error: " . $sql . "<br>" . mysqli_error($con);\par
+              \}\par
+            \}\par
+        \}\par
+        elseif($_POST["crud"]=="edit")\par
+        \{\par
+          $cName = mysqli_real_escape_string($con,$_REQUEST["inputName"]);\par
+          $cEmail = mysqli_real_escape_string($con,$_REQUEST["inputEmail"]); \par
+          $cid = mysqli_real_escape_string($con,$_POST["id"]);\par
+          $sql = "UPDATE `employee`\par
+          SET `name` = '$cName', `email` = '$cEmail'\par
+          WHERE `employeeid`='$cid';";\par
+          if (mysqli_query($con, $sql)) \par
+          \{\par
+            echo "Record edited successfully";\par
+          \} else \par
+          \{\par
+            echo "Error: " . $sql . "<br>" . mysqli_error($con);\par
+          \}\par
+        \}\par
+    \}\par
+        if(isset($_REQUEST["crud"]))\par
+        \{ \par
+          if($_REQUEST["crud"]=="delete")\par
+        \{\par
+          $uid = $_REQUEST["id"];\par
+          $id = mysqli_real_escape_string($con,$uid);\par
+          $del = "DELETE FROM `employee` WHERE `employeeid`=$id;";\par
+          if (mysqli_query($con, $del)) \par
+              \{\par
+                echo "New record deleted successfully";\par
+              \} else \par
+              \{\par
+                echo "Error: " . $del . "<br>" . mysqli_error($con);\par
+              \}\par
+        \}\par
+        \}\par
+    $employ = "SELECT * FROM employee";\par
+    $result = mysqli_query($con , $employ);\par
+    echo "<table class='table table-striped mt-3' style='width:50%;margin-left: 200px;'>";\par
+    echo "<tr><th>Name</th><th>Email</th><th>Password</th><th>Options</th></tr>";\par
+    while($row = mysqli_fetch_assoc($result))\par
+    \{\par
+        $name = $row["name"];\par
+        $email = $row["email"];\par
+        $pass = $row["pass"];\par
+        $id = $row["employeeid"];\par
+        echo "<tr>";\par
+        echo "<td>$name</td> <td>$email</td> <td>$pass</td> <td> <a href='index.php?crud=edit&id=$id&name=$name&email=$email'>Edit</a> <a href='index.php?crud=delete&id=$id'>Delete</a> </td>";\par
+        echo "</tr>"; \par
+    \}\par
+    echo "</table>";\par
+    mysqli_close($con);\par
+?>\par
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>\par
+</body>\par
+</html>\f1\lang1033\par
+\par
+\par
+\b\par
+}
+ 
